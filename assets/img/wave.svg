@@ -1,8 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1000 200">
-    <path fill="#41B3A3" 
-    fill-opacity="1" 
-    d="M0,192L60,170.7C120,149,240,107,360,112C480,117,600,171,720,202.7C840,235,960,245,1080,234.7C1200,224,1320,192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-    </path>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 200" style="enable-background:new 0 0 1000 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#41B3A3;}
+</style>
+<path class="st0" d="M1000,200h-41.7c-41.7,0-125,0-208.3,0s-166.7,0-250,0s-166.7,0-250,0s-166.7,0-208.3,0H0v1.9l0,0
+	C9.4,154.3,124.6,33,205.9,14.3c169-38.8,281.7,78,344,128.6c33.4,27.1,76.7,49.8,141.7,49.3c55.2-0.4,73.9,0.3,134.8-29.6
+	c14.7-7.2,28.3-16.6,40.3-27.8C920.8,84.2,946.1,36,1000,25.3"/>
+<path class="st0" d="M904.3,84.6"/>
 </svg>
-            

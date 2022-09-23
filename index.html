@@ -6,44 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
     <script defer src="./script.js"></script>
 </head>
 <body>
     
     <main class="main">
         <div class="alfapetBGContainer">
-            <header>
-                <h3>Hej</h3>
-
-                <div class="hederIconsContainer">
-
-                    <div class="basketImgContainer" >
-                        <img class="basketImg" src="./assets/svg/basket.svg" />
+            <div class="alfapetBG">
+                
+                <header>
+                    <h3></h3>
+                    <div class="hederIconsContainer">
+                        <div class="basketImgContainer" >
+                            <img class="basketImg" src="./assets/svg/basket.svg" />
+                        </div>
+                        <div id="menuIcon" class="menuIcon">
+                            <img class="menuIconSVG" src="./assets/svg/PlockepinnRedVithamburgare.svg" />
+                        </div>
                     </div>
-
-                    <div class="menuIcon">
-                        <img src="./assets/svg/PlockepinnRedVithamburgare.svg" />
-                    </div>
-
+                </header>
+                
+                <div class="pageNameContainer">
+                    <h1 class="pageName">Brädspels&shy;hörnan</h1>
                 </div>
                 
-            </header>
-
-            <div class="alfapetBG">
-
-                <div class="pageNameContainer"></div>
-
-            </div>
-            <div class="waveContiner">
-                <div class="wave">
-    
+                <div class="waveContiner">
+                    <div class="wave">
+                        <img class="waveImg" src="./assets/img/wave2.svg">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="triangelContainer">
 
-            <div class="triangel"></div>
+        <div class="secondContainer">
+            <div class="whiteHeading">
+                <h2>Om oss</h2>
+            </div>
+            
+
+            <div class="textContainer">
+                <p>Vi är ett litet bolag som grundades 2022 av fyra brädspelsgalna 40-åringar. 
+                    <br>
+                    <br>
+                    Vi skapar lekfulla spel med fokus på positiva, etiska och lärorika spel innehållande mycket färg och pedagogiskt material. Bokstäver, former och färger ingår i samtliga koncept som vi levererar till överkomliga priser.
+                    <br>
+                    <br>
+                    Vårt mål är att spelen både ska vara roliga att spela men samtidigt estetiskt tilldragande så de kan vara del av inredningen för att kunna vara nära till hands.  </p>
+
+            </div>
+    
+            <div class="triangelContainer">
+                <div class="triangel"></div>
+            </div>
+
         </div>
+
+        <div class="gamesContainer">
+            <h2 class="gamesHeading">Våra spel</h2>
+
+            <div class="gamesWraper">
+
+                
+
+                    <img class="gameImg" src="./assets/jpg/pexels-pixabay-277124-small-piece.jpg" alt="">
+                    <div class="gameInfo">
+                        <h3>Brädspelspel</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="price">Pris: 300kr</h3>
+                        <button class="addToCartBtn">Lägg till</button>
+                    </div>                
+
+                    <img class="gameImg" src="./assets/jpg/pexels-pixabay-277124-small-piece.jpg" alt="">
+                    <div class="gameInfo">
+                        <h3>Brädspelspel</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="price">Pris: 300kr</h3>
+                        <button class="addToCartBtn">Lägg till</button>
+                    </div>
+
+
+                <a class="moreProductsLink">Fler produkter</a>
+
+            </div>
+            <div class="qBlockContainer">
+                <h1>Q</h1>
+            </div>
+            <h2 class="gamesHeading">Nyhetsbrev</h2>
+        </div>
+
+
+        <div class="newsLetterContainer">
+            <h2>Prenumerera</h2>
+            <div class="subscribeContainer">
+                <div class="pinkContainer">
+                    <p>BÄSTA NYHETSBREVET! </p>
+                </div>
+                <p class="newsletterText">Skriv in din e-mail nedan så får 
+                    du vårt nyhetsbrev som är 
+                    fullproppat med erbjudanden.</p>
+                    
+                    <input class="emailInput" type="text" placeholder="e-mail">
+                    <button class="newsLetterBtn">Lägg till</button>
+            </div>
+        </div>
+        
+        <h1>S</h1>
+
+        <div class="picContainer">
+            <img class="ticTacToe" src="./assets/jpg/ticktacktoe.jpg" alt="">
+            <div class="pinkContainer2">
+                <p class="quote">“Just one game they said, 
+                    and started to play - 
+                    that was yesterday...”
+                    Kinesiskt ordspråk</p>
+            </div>
+        </div>
+
+        <div class="contactInfoContainer">
+            <div class="contactText">
+
+                <h2>Kontakta oss</h2>
+                <p>Spelhörnan<br>
+                org.nr: 000000-00</p>
+                    
+                <p>Spelgatan 35
+                000 00 Spelstan</p> 
+
+                <p>+46(0)40000000</p>            
+                <p>e-mail: <br>
+                support@hornan.se </p>
+                <hr>
+                <p class="copyright">Copyright 2022</p>
+            </div>
+        </div>
+
+        <footer id="cookies" class="cookies">
+            <div class="cookiesContainer">
+                <button id="aceptAllCookiesBtn" class="aceptAllCookiesBtn">Accepterar alla</button>
+                <button id="acceptnecessaryCookiesBtn" class="acceptnecessaryCookiesBtn">Accepterar nödvändiga</button>
+                <p>För att ge dig som besökare en bra upplevelse på spelhornan.se använder vi cookies. Det handlar dels om helt nödvändiga cookies för webbsidans grundfunktionalitet, men även cookies för bättre prestanda, personalisering, funktionalitet med mera.
+                    Vi rekommenderar att du accepterar samtliga typer av cookies. Men det är du som bestämmer.
+                </p>
+                <a>Cookies-inställningar</a>
+            </div>
+        </footer>
+        <div id="menuWraper">
+            <div id="menu" class="menu">
+                <div id="closeMenu" class="closeMenu"></div>
+                <a class="menuLink" href="">Om oss</a>
+                <a class="menuLink" href="">Produkter</a>
+                <a class="menuLink" href="">Nyhetsbrev</a>
+                <a class="menuLink" href="">Kontakta oss</a>
+            </div>
+        </div>
+        
+
     </main>
 </body>
 </html>
