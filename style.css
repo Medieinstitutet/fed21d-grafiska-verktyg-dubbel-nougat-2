@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Gluten', cursive;
+    overflow-x: hidden;
 }
 
 .hide {
@@ -44,8 +45,11 @@ header {
     display: flex;
     align-items: center;
     z-index: 5;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.40));
+    cursor: pointer;
 }
 
 .menuIconSVG {
@@ -56,6 +60,8 @@ header {
 .basketImg {
     width: 60px;
     height: 60px;
+    filter: drop-shadow(-5px -2px 5px rgba(0, 0, 0, 0.40));
+    cursor: pointer;
 }
 
 .alfapetBGContainer {
@@ -98,6 +104,7 @@ header {
 }
 
 .waveContiner {
+    position: relative;
     width: 100vw;
 }
 
@@ -106,13 +113,15 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    position: absolute;
+    top: -9.5vh;
     height: 10vh;
     width: 100vw;
-    filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.50))
 }
 
 .waveImg {
     width: 100%;
+    filter: drop-shadow(-15px -15px 6px rgba(0, 0, 0, 0.40))
 }
 
 
@@ -125,12 +134,14 @@ header {
 
 .MBlockContainer {
     position: relative;
-    right: -10vw;
-    top: -16vh;
+    width: 100vw;
+    height: 100%;
 }
 
 .MBlock {
     position: absolute;
+    right: -40px;
+    top: -16vh;
     transform: rotate(40deg);
     width: 200px;
     height: 200px;
@@ -148,6 +159,14 @@ header {
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
     margin-bottom: 200px;
     margin-top: 10vh;
+}
+
+.whiteHeadingText {
+    font-size: 48px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .textContainer {
@@ -179,7 +198,7 @@ header {
     width: 0;
     height: 0;
     border-left: 98vw solid transparent;
-    border-bottom: 50vh solid #C38D9E;
+    border-bottom: 98vw solid #C38D9E;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50));
     margin-bottom: 10vh;
 }
@@ -271,6 +290,15 @@ header {
     line-height: 18px;
     text-align: center;
     color: #000000; 
+    cursor: pointer;
+}
+
+.addToCartBtn:hover {
+    background: rgba(96, 191, 182, 0.4);
+}
+
+.addToCartBtn:active {
+    background: #FFFFFF;
 }
 
 .price {
@@ -296,6 +324,17 @@ header {
     line-height: 26px;
     text-decoration-line: underline;
     color: #000000;
+    cursor: pointer;
+}
+
+.moreProductsLink:hover {
+    color: rgba(65, 179, 164, 0.5);
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 1));
+}
+
+.moreProductsLink:active {
+    color: rgba(195, 141, 158, 0.5);
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 1));
 }
 
 .newsHeadingAndQBlockContainer {
@@ -316,7 +355,6 @@ header {
 }
 
 .newsletterHeading {
-    /* margin: 2vh 0 5vh 0; */
     color: #FFFFFF;
     font-size: 48px;
     line-height: 42px;
@@ -324,16 +362,22 @@ header {
 }
 
 .newsLetterContainer {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 50vh;
-    margin-bottom: 10vh;
+    height: 70vh;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
     text-align: center;
     background: rgba(232, 168, 124, 0.8);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.subText {
+    padding: 10px;
 }
 
 .subscribeContainer {
@@ -346,11 +390,15 @@ header {
     margin-bottom: 10vh;
     background-color: white;
     box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 .pinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60vw;
-    height: 5vh;
+    height: 8vh;
     background: rgba(195, 141, 158, 0.6);
     border-radius: 10px;
 }
@@ -380,10 +428,10 @@ header {
 
 .newsLetterBtn {
     background: #E8A87C;
-    margin-bottom: 2vh;
+    margin: 2vh 0;
     border: none;
-    height: 5vh;
-    width: 30vw;
+    height: 6vh;
+    width: 26vw;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     font-family: 'Gluten';
@@ -393,6 +441,34 @@ header {
     line-height: 18px;
     text-align: center;
     color: #000000;
+    cursor: pointer;
+}
+
+.newsLetterBtn:hover {
+    background: rgba(96, 191, 182, 0.4);
+}
+
+.newsLetterBtn:active {
+    background: #FFFFFF;
+} 
+
+
+.SBlockConatiner {
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+    margin: 3vh 0;
+}
+
+.SBlock {
+    z-index: 0;
+    position: absolute;
+    right: 8vw;
+    top: -29vh;
+    width: 220px;
+    height: 220px;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+    transform: rotate(90deg);
 }
 
 .picContainer {
@@ -401,14 +477,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: auto;
+    height: 90vh;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .ticTacToe {
-    width: 75vw;
-    height: 40vh;
+    width: 50vh;
+    height: 60vh;
     padding: 50px;
     filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.25));
 }
@@ -426,8 +502,8 @@ header {
 .quote {
     padding: 0 20px;
     font-weight: 400;
-font-size: 16px;
-line-height: 14px;
+    font-size: 16px;
+    line-height: 14px;
 }
 
 .contactInfoContainer {
@@ -435,15 +511,66 @@ line-height: 14px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 12vh;
     width: 100vw;
-    height: 50vh;
+    height: 80vh;
     background: #C69C6D;
 }
 
 .contactText {
-    width: 60vw;
-    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 64vw;
+    padding: 6vh;
+
+}
+
+.contactHeader {
+    margin-top: 10vh;
+    font-size: 36px;
+line-height: 32px;
+}
+
+.locationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.locationSVG {
+    margin-right: 10px;
+    height: 25px;
+    padding-right: 4px;
+}
+
+.phonenumberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.phoneSVG {
+    margin-right: 10px;
+    height: 25px;
+    padding-right: 4px;
+}
+
+.emailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.emailSVG {
+    margin-right: 10px;
+    height: 25px;
+    padding-right: 4px;
 }
 
 hr {
@@ -456,7 +583,7 @@ hr {
 
 .copyright {
     text-align: center;
-    margin: 5vh 0;
+    margin: 6vh 0 0 0;
 }
 
 .cookies {
@@ -474,7 +601,7 @@ hr {
 
 .cookiesContainer {
     height: 40vh;
-    width: 70vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,29 +610,45 @@ hr {
 }
 
 .aceptAllCookiesBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background: #E8A87C;
-    height: 5vh;
+    height: 6vh;
     width: 50vw;
     margin: 2vh 0;
+    padding: 3vh 0;
     font-family: 'Gluten';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 16px;
-    text-align: center;
     color: #000000;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.aceptAllCookiesBtn:hover {
+    background: rgba(65, 179, 163, 0.4);
+}
+
+.aceptAllCookiesBtn:active {
+    background-color: #FFFFFF;
+}
+
 
 .acceptnecessaryCookiesBtn {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background: #C38D9E;
-    height: 5vh;
+    height: 6vh;
     width: 70vw;
     margin: 2vh 0;
+    padding: 3vh 0;
     font-family: 'Gluten';
     font-style: normal;
     font-weight: 500;
@@ -515,7 +658,21 @@ hr {
     color: #000000;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.acceptnecessaryCookiesBtn:hover {
+    background: rgba(65, 179, 163, 0.4);
+}
+
+.acceptnecessaryCookiesBtn:active {
+    background-color: #FFFFFF;
+}
+
+.cookiesSettings {
+    color: #000000;
+}
+
 #menuWraper {
     position: absolute;
     display: none;
@@ -534,10 +691,10 @@ hr {
     font-size: 36px;
     line-height: 32px;
     text-decoration-line: underline;
-    color: #000000;
     padding: 10vh 0;
 }
 
 .menuLink {
     padding: 5vh 0;
+    color: #000000;
 }
