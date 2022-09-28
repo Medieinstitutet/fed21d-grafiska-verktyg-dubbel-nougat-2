@@ -21,7 +21,6 @@ html, body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-
 }
 
 header {
@@ -31,9 +30,8 @@ header {
     align-items: center;
     background-color: rgba(65, 179, 163, 0.9);
     width: 100%;
-    height: 90px;
+    height: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .hederIconsContainer {
@@ -82,9 +80,16 @@ header {
     width: 100vw
 }
 
+.iconContainer {
+    display: none;
+}
+
 .pageNameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80vw;
-    height: 140px;
+    height: 20vh;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
@@ -107,7 +112,6 @@ header {
     position: relative;
     width: 100vw;
 }
-
 
 .wave {
     display: flex;
@@ -141,10 +145,11 @@ header {
 .MBlock {
     position: absolute;
     right: -40px;
-    top: -16vh;
+    top: -100px;
     transform: rotate(40deg);
     width: 200px;
     height: 200px;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
 }
 
 
@@ -157,8 +162,8 @@ header {
     text-align: center;
     color: #FFFFFF;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
-    margin-bottom: 200px;
-    margin-top: 10vh;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .whiteHeadingText {
@@ -171,7 +176,7 @@ header {
 
 .textContainer {
     position: absolute;
-    top: 30vh;
+    top: 200px;
     z-index: 1;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
@@ -200,7 +205,11 @@ header {
     border-left: 98vw solid transparent;
     border-bottom: 98vw solid #C38D9E;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50));
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
+}
+
+.jengaContainer {
+    display: none;
 }
 
 .gamesContainer {
@@ -208,7 +217,7 @@ header {
     text-align: center;
     height: auto;
     width: 100vw;   
-    padding-top: 10vh;
+    padding-top: 60px;
 }
 
 .ublockContainer {
@@ -218,7 +227,7 @@ header {
 .UBlock {
     position: absolute;
     left: -8vw;
-    top: -15vh;
+    top: -90px;
     width: 200px;
     height: 200px;
     transform: rotate(-90deg);
@@ -234,8 +243,8 @@ header {
     text-align: center;
     color: #FFFFFF;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
-    margin-top: 16vh;
-    margin-bottom: 2vh;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 .gamesWraper {
@@ -253,9 +262,9 @@ header {
 }
 
 .gameImg {
-    padding-top: 20%;
-    padding-bottom: 20%;
-    width: 60vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 200px;
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
 }
 
@@ -263,7 +272,7 @@ header {
     padding: 10px 50px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
-    width: 60vw;
+    width: 220px;
     font-family: 'Gluten';
     font-style: normal;
     font-weight: 400;
@@ -314,6 +323,10 @@ header {
     -webkit-text-stroke: 0.5px #000000;
 }
 
+.moreProductsLinkConatiner {
+    padding: 40px 0 60px 0;
+}
+
 .moreProductsLink {
     padding: 40px;
     margin-bottom: 40px;
@@ -339,19 +352,23 @@ header {
 
 .newsHeadingAndQBlockContainer {
     position: relative;
-    height: 26vh;
+    height: 100px;
     width: 100vw;
-    margin: 14vh;
+    margin: 80px;
 }
 
 .QBlock {
     position: absolute;
-    top: -18vh;
-    left: -6vw;
+    top: -110px;
+    left: -30px;
     width: 200px;
     height: 200px;
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
     transform: rotate(-180deg);
+}
+
+.SBlockiPad {
+    display: none;
 }
 
 .newsletterHeading {
@@ -368,16 +385,16 @@ header {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 70vh;
-    padding-bottom: 5vh;
-    margin-bottom: 5vh;
+    height: 600px;
     text-align: center;
     background: rgba(232, 168, 124, 0.8);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .subText {
-    padding: 10px;
+    padding: 30px 0 10px 0;
+    font-size: 36px;
+    line-height: 32px;
 }
 
 .subscribeContainer {
@@ -386,10 +403,10 @@ header {
     align-items: center;
     justify-content: center;
     width: 75vw;
-    height: 50vh;
-    margin-bottom: 10vh;
+    height: auto;
+    margin-bottom: 110px;
     background-color: white;
-    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow:  15px 15px 15px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
 
@@ -398,9 +415,10 @@ header {
     justify-content: center;
     align-items: center;
     width: 60vw;
-    height: 8vh;
+    height: 50px;
     background: rgba(195, 141, 158, 0.6);
     border-radius: 10px;
+    margin-top: 40px;
 }
 
 .newsletterText {
@@ -412,9 +430,9 @@ header {
 
 .emailInput {
     background: #EFEEF1;
-    height: 4vh;
+    height: 30px;
     width: 60vw;
-    margin-bottom: 2vh;
+    margin: 40px 0 10px 0;
     border: 1px solid #41B3A3;
     text-align: center;
     font-family: 'Gluten';
@@ -428,9 +446,9 @@ header {
 
 .newsLetterBtn {
     background: #E8A87C;
-    margin: 2vh 0;
+    margin: 20px 0;
     border: none;
-    height: 6vh;
+    height: 50px;
     width: 26vw;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -455,18 +473,18 @@ header {
 
 .SBlockConatiner {
     position: relative;
-    height: 20vh;
+    height: 200px;
     width: 100vw;
-    margin: 3vh 0;
+    margin: 50px 0;
 }
 
 .SBlock {
     z-index: 0;
     position: absolute;
-    right: 8vw;
-    top: -29vh;
-    width: 220px;
-    height: 220px;
+    right: 30px;
+    top: -180px;
+    width: 224px;
+    height: 236px;
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
     transform: rotate(90deg);
 }
@@ -477,26 +495,25 @@ header {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 1000px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .ticTacToe {
-    width: 50vh;
-    height: 60vh;
+    width: 300px;
     padding: 50px;
     filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.25));
 }
 
 .pinkContainer2 {
-    width: 70vw;
+    width: 250px;
     height: auto;
     background: rgba(195, 141, 158, 0.6);
     border-radius: 10px;
     padding: 10px 10px;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 20px;
 }
 
 .quote {
@@ -506,14 +523,18 @@ header {
     line-height: 14px;
 }
 
+.QBlockContaineriPad {
+    display: none;
+}
+
 .contactInfoContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 12vh;
+    margin-top: 140px;
     width: 100vw;
-    height: 80vh;
+    height: 500px;
     background: #C69C6D;
 }
 
@@ -521,14 +542,14 @@ header {
     display: flex;
     flex-direction: column;
     width: 64vw;
-    padding: 6vh;
+    padding: 20px;
 
 }
 
 .contactHeader {
-    margin-top: 10vh;
+    margin-top: 40px;
     font-size: 36px;
-line-height: 32px;
+    line-height: 32px;
 }
 
 .locationContainer {
@@ -575,10 +596,10 @@ line-height: 32px;
 
 hr {
     border:0;
-    border-top:1px solid black;
+    border-top:2px solid black;
     margin:0;
-    height:1px;
-    margin-top: 6vh;
+    height:2px;
+    margin-top: 50px;
 }
 
 .copyright {
@@ -588,7 +609,7 @@ hr {
 
 .cookies {
     z-index: 2;
-    height: 50vh;
+    height: 440px;
     width: 100vw;
     position: fixed;
     bottom: 0;
@@ -607,6 +628,10 @@ hr {
     justify-content: center;
     align-items: center;
     margin-bottom: 4vh;
+}
+
+.cookiesContaineriPad {
+    display: none;
 }
 
 .aceptAllCookiesBtn {
@@ -697,4 +722,348 @@ hr {
 .menuLink {
     padding: 5vh 0;
     color: #000000;
+}
+
+
+@media only screen and (min-width: 834px) {
+
+    .alfapetBG {
+        height: 900px;
+    }
+
+   .icon {
+    width: 80px;
+    height: 80px;
+    padding: 0 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   }
+
+   .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .hornanText {
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+   }
+
+   .pageName {
+    font-size: 76px;
+    line-height: 67px;
+    padding: 50px 20px 50px 20px;
+   }
+
+   .secondContainer {
+    position: relative;
+   }
+
+   .pageNameContainer {
+    height: 300px;
+    width: auto;
+    margin: 200px 0 300px 0;
+   }
+
+   .MBlock {
+    z-index: 2;
+    right: 50px;
+    top: -100px;
+    width: 210px;
+    height: 210px;
+    }
+
+    .whiteHeading {
+        margin: 0;
+        position: absolute;
+        left: 30vw;
+        top: -60px;
+    }
+
+    .whiteHeadingText {
+        margin: 0 0 160px 0;
+        font-size: 72px;
+        line-height: 64px;
+    }
+
+    .textContainer {
+        margin-top: 0;
+        padding: 40px 80px;
+        width: 35vw;
+        top: 60px;
+        left: 18vw;
+    }
+
+    .triangel {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-left: 100vw solid transparent;
+        border-bottom: 80vw solid #C38D9E;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50));
+        margin-top: 200px;
+    }
+
+    .jengaImgWraper {
+        position: relative;
+        height: auto;
+        width: auto;
+    }
+
+
+    .jengaContainer {
+        display: flex;
+        position: absolute;
+        top: -450px;
+        left: 0vw;
+        background: rgba(232, 168, 124, 0.6);
+        padding: 40px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .jengaImg {
+        width: 280px;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+    }
+
+    .UBlock {
+        left: 40px;
+        top: -320px;
+        width: 280px;
+        height: 250px;
+    }
+
+    .gamesHeading {
+        font-size: 72px;
+        line-height: 64px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .gamesContainer {
+        padding-top: 20px;
+
+    }
+
+    .gamesWraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game1and2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+
+    }
+    
+    .gameBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gameImg {
+        width: 230px;
+    }
+
+    .gameInfo {
+        width: 200px;
+    }
+
+    .moreProductsLinkConatiner {
+        padding: 60px;
+    }
+
+    .newsHeadingAndQBlockContainer {
+        padding: 0;
+        margin: 40px;
+    }
+
+    .QBlock {
+        display: none;
+        height: auto;
+    }
+
+    .SBlockiPad {
+        display: block;
+        z-index: 0;
+        position: absolute;
+        right: 12px;
+        top: -240px;
+        width: 280px;
+        height: 300px;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+        transform: rotate(90deg);
+    }
+
+    .newsletterHeading {
+        font-size: 72px;
+        line-height: 64px;
+    }
+
+    .subText {
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .newsLetterContainer {
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .subscribeContainer {
+        width: 400px;
+        margin-bottom: 70px;
+    }
+
+    .pinkContainer {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .emailInput {
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .newsLetterBtn {
+        width: 15vw;
+        font-weight: 500;
+    }
+
+    .SBlock {
+        display: none;
+    }
+
+    .picContainer {
+        display: none;
+    }
+
+    .QBlockContaineriPad {
+        display: block;
+        position: relative;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .QBlockiPad {
+        position: absolute;
+        z-index: 0;
+        top: -170px;
+        left: -290px;
+        width: 230px;
+        height: 250px;
+        filter: drop-shadow(-15px -15px 5px rgba(0, 0, 0, 0.25));
+        transform: rotate(-180deg);
+    }
+
+    .contactInfoContainer {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .contactText {    
+        display: flex;
+        height: auto;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contactHeaderiPad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .contactInfoiPadContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        font-size: 20px;
+        line-height: 18px;
+    }
+    
+    .leftContactDiv {
+        width: 200px;
+    }
+
+    .rightContactDiv {
+        width: 200px;
+    }
+
+    .hrAndCopyrightiPadContainer {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    hr {
+        margin-top: 10px;
+    }
+
+    .hr {
+        width: 400px;
+
+    }
+
+    .copyright {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    .cookies {
+        height: 240px;
+    }
+
+    .cookiesContainer {
+        display: none;
+    }
+
+    .cookiesContaineriPad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cookiesText {
+        padding: 0 70px 0 70px;
+    }
+
+    .aceptAllCookiesBtn {
+        width: 180px;
+    }
+
+    .acceptnecessaryCookiesBtn {
+        width: 250px;
+    }
+
+    .cookiesBtnContaineriPad {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .cookiesSettings {
+        margin: 10px;
+    }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+
 }
