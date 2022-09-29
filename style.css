@@ -7,7 +7,9 @@ html, body {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    font-family: 'Gluten', cursive;
+    font-family: 'Gluten';
+    font-style: normal;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -717,6 +719,10 @@ hr {
     display: none;
 }
 
+/* ---------------------------------------------------------------- */
+/* -------------------------------- NAV MENU ---------------------- */
+/* ---------------------------------------------------------------- */
+
 .menu {
     height: 80vh;
     width: 100vw;
@@ -1272,10 +1278,6 @@ hr {
 
     .contactHeaderiPad {
         display: none;
-    }
-
-    .contactHeaderDesktop {
-
     }
 
     .verticalLine {
