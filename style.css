@@ -11,6 +11,7 @@ html, body {
     font-style: normal;
     font-weight: 400;
     overflow-x: hidden;
+    font-family: 'Gluten', cursive;
 }
 
 .fontNormal400 {
@@ -541,7 +542,7 @@ header {
     margin-top: 140px;
     width: 100vw;
     height: 500px;
-    background: #C69C6D;
+    background: #E8A87C;
     max-width: 1440px;
 }
 
@@ -663,7 +664,7 @@ hr {
 }
 
 .aceptAllCookiesBtn:hover {
-    background: rgba(65, 179, 163, 0.4);
+    background: rgba(65, 255, 163, 0.4);
 }
 
 .aceptAllCookiesBtn:active {
@@ -691,8 +692,7 @@ hr {
 }
 
 .acceptnecessaryCookiesBtn:hover {
-    background: rgba(65, 179, 163, 0.4);
-}
+    background: rgba(65, 255, 163, 0.4);}
 
 .acceptnecessaryCookiesBtn:active {
     background-color: #FFFFFF;
@@ -714,7 +714,7 @@ hr {
 .menu {
     height: 80vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1284,6 +1284,7 @@ hr {
     }
 
     .contactContainerDesktop {
+        background-color: #E8A87C;
         width: 1300px;
         display: flex;
         position: relative;
