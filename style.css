@@ -618,7 +618,7 @@ hr {
 }
 
 .cookies {
-    z-index: 2;
+    z-index: 3;
     height: 440px;
     width: 100vw;
     position: fixed;
@@ -1359,6 +1359,7 @@ hr {
     }
     
     .cookiesSettingsDesctop {
+        display: block;
         padding: 0 70px 0 70px;
         color: #000000;
     }
